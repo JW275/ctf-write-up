@@ -2,7 +2,7 @@
 > pwn, heap, tcache
 
 ## 설명
-heap내용을 출력해주는 메뉴가 존재하지 않기때문에 leak이 불가능하기 때문에, blind로 exploit해야한다.
+heap내용을 출력해주는 메뉴가 존재하지 않아 leak이 불가능하기 때문에, blind로 exploit해야한다.
 이 때문에 쓸만한 포인터를 잘 찾아내는 것이 중요하다.
 exploit은 children_tcache의 연장선이며, 이 때문에 poison null byte의 트리거 방법은 여기에 적지 않는다.
 
